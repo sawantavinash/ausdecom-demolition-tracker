@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ausdecom – Demolition Project Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js
+</head>
+
+<body>
+<div id="app">
+
+<header>
+  <div class="logo">
+    <span class="aus">Aus</span><span class="decom">decom</span>
+  </div>
+
+  <div class="stats">
+    <div><span id="zonesActive">0</span><small>Active Zones</small></div>
+    <div><span id="asbActive">0</span><small>Asbestos Active</small></div>
+    <div><span id="demoActive">0</span><small>Demolition Active</small></div>
+  </div>
+
+  <div class="controls">
+    <input type="date" id="checkDate">
+    <button onclick="downloadPDF()">EXPORT PDF</button>
+  </div>
+</header>
+
+<main id="zoneContainer"></main>
+
+</div>
+
+<script src="data/zones.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
